@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width,initial-scale=1'>
+<title>Wesley & Valéria</title>
+<style>
+body{margin:0;font-family:Georgia,serif;background:#faf7f2;color:#5a4636;text-align:center}
+.hero{padding:60px 20px;background:linear-gradient(#fff,#f3eadf)}
+h1{font-size:48px;margin:0}h2{font-weight:normal}
+.card{max-width:700px;margin:25px auto;padding:20px;background:#fff;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+button,a.btn{display:inline-block;padding:14px 22px;border-radius:30px;background:#b9935a;color:#fff;text-decoration:none}
+#count{font-size:30px;font-weight:bold}
+</style></head><body>
+<div class='hero'><h1>Wesley & Valéria</h1><h2>19 de setembro de 2026 • 17h</h2></div>
+<div class='card'><h3>Faltam</h3><div id='count'></div></div>
+<div class='card'><h3>Estamos nos casando! 💍</h3><p>Será uma alegria celebrar esse momento com você.</p>
+<p><b>Local:</b><br>Rua Tereza Soares, 115 – Parque Genibaú</p></div>
+<div class='card'><h3>Contribua com nossa Lua de Mel ✈️</h3>
+<a class='btn' href='https://link.mercadopago.com.br/wesleyevaleria' target='_blank'>Contribuir</a></div>
+<div class='card'><h3>Confirmação de Presença</h3>
+<input placeholder='Seu nome'><br><br><button>Confirmar</button></div>
+<script>
+const t=new Date('2026-09-19T17:00:00');
+function u(){let d=t-new Date();if(d<0){count.innerHTML='Chegou o grande dia!';return;}
+let s=Math.floor(d/1000),dd=Math.floor(s/86400);s%=86400;
+let h=Math.floor(s/3600);s%=3600;let m=Math.floor(s/60);let ss=s%60;
+count.innerHTML=`${dd} dias ${h}h ${m}m ${ss}s`;}
+setInterval(u,1000);u();
+</script></body></html>

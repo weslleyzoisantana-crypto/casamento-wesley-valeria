@@ -494,3 +494,187 @@ padding:14px 30px;
 }
 
 }
+
+/* ===========================
+   ANIMAÇÕES
+=========================== */
+
+section,
+.card,
+.presente{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all .8s ease;
+
+}
+
+.mostrar{
+
+opacity:1 !important;
+
+transform:translateY(0) !important;
+
+}
+
+/* ===========================
+   MENU MOBILE
+=========================== */
+
+.menu-mobile{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+color:#66725d;
+
+}
+
+@media(max-width:768px){
+
+.menu-mobile{
+
+display:block;
+
+}
+
+nav{
+
+display:none;
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:white;
+
+flex-direction:column;
+
+padding:20px;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+nav.ativo{
+
+display:flex;
+
+}
+
+}
+
+/* ===========================
+   BOTÃO TOPO
+=========================== */
+
+.topo{
+
+position:fixed;
+
+right:25px;
+
+bottom:25px;
+
+width:55px;
+
+height:55px;
+
+border:none;
+
+border-radius:50%;
+
+background:#66725d;
+
+color:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+opacity:0;
+
+pointer-events:none;
+
+transition:.3s;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.topo.show{
+
+opacity:1;
+
+pointer-events:auto;
+
+}
+
+.topo:hover{
+
+background:#55614f;
+
+transform:translateY(-4px);
+
+}
+
+/* ===========================
+   ROLAGEM SUAVE
+=========================== */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+/* ===========================
+   SELEÇÃO DE TEXTO
+=========================== */
+
+::selection{
+
+background:#66725d;
+
+color:white;
+
+}
+
+/* ===========================
+   BARRA DE ROLAGEM
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#f5f2ec;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#66725d;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#55614f;
+
+}

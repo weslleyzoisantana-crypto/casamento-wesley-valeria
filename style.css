@@ -826,7 +826,7 @@ background:#55614f;
     transform: scale(1.03);
 }
 
-/* celular */
+/* CELULAR */
 @media (max-width: 600px) {
 
     .aula-lista {
@@ -849,3 +849,21 @@ background:#55614f;
 
 }
 
+
+/* COMPUTADOR */
+@media (min-width: 601px) {
+
+    .aula-presente > a {
+        text-decoration: none !important;
+        color: #59655e !important;
+    }
+
+    .aula-presente > a span {
+        text-decoration: none !important;
+    }
+
+    .aula-presente > a .botao-presente {
+        text-decoration: none !important;
+    }
+
+}

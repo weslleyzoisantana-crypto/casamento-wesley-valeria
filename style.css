@@ -849,32 +849,3 @@ background:#55614f;
 
 }
 
-/* ===== AJUSTE SOMENTE PARA COMPUTADOR ===== */
-
-@media (min-width: 769px) {
-
-    .aula-presente > a {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        gap: 12px;
-
-        text-decoration: none !important;
-        color: #59655e !important;
-    }
-
-    .aula-presente > a > span:first-child {
-        flex: 1;
-        text-decoration: none !important;
-    }
-
-    .aula-presente > a > span:nth-child(2) {
-        text-decoration: none !important;
-    }
-
-    .aula-presente > a > .botao-presente {
-        flex-shrink: 0;
-        text-decoration: none !important;
-    }
-
-}

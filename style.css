@@ -761,109 +761,67 @@ background:#55614f;
     }
 }
 
-/* ===== LISTA DE PRESENTES ===== */
+/* ===== AJUSTE FINAL DA LISTA DE PRESENTES ===== */
 
-.aula-lista {
-    max-width: 850px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.aula-presente {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-
-    background: rgba(255, 255, 255, 0.75);
-    border: 1px solid rgba(143, 174, 155, 0.25);
-    border-radius: 18px;
-
-    padding: 18px 22px;
-    margin-bottom: 14px;
-
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
-
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.aula-presente:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
-}
-
-/* texto do presente */
-.aula-presente .nome-presente {
-    font-size: 17px;
-    color: #59655e;
-    font-weight: 500;
-}
-
-/* botão */
-.botao-presente {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-
-    background: #8fae9b !important;
-    color: white !important;
-
+.aula-presente > a {
     text-decoration: none !important;
-
-    padding: 10px 20px;
-    border-radius: 25px;
-
-    font-size: 14px;
-    font-weight: 600;
-
-    white-space: nowrap;
-
-    transition: all 0.2s ease;
+    color: #59655e !important;
 }
 
-.botao-presente:hover {
-    background: #789783 !important;
-    transform: scale(1.03);
+/* COMPUTADOR */
+@media (min-width: 769px) {
+
+    .aula-presente > a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: 12px;
+        text-decoration: none !important;
+        color: #59655e !important;
+    }
+
+    .aula-presente > a > span {
+        text-decoration: none !important;
+    }
+
+    .aula-presente > a > span:nth-child(1) {
+        flex: 1;
+    }
+
+    .aula-presente > a > span:nth-child(2) {
+        white-space: nowrap;
+    }
+
+    .aula-presente > a > .botao-presente {
+        flex-shrink: 0;
+    }
 }
 
 /* CELULAR */
 @media (max-width: 600px) {
 
-    .aula-lista {
-        padding: 0 15px;
-    }
-
-    .aula-presente {
-        padding: 16px;
-        gap: 12px;
-    }
-
-    .aula-presente .nome-presente {
-        font-size: 15px;
-    }
-
-    .botao-presente {
-        padding: 9px 14px;
-        font-size: 13px;
-    }
-
-}
-
-
-/* COMPUTADOR */
-@media (min-width: 601px) {
-
     .aula-presente > a {
-        text-decoration: none !important;
-        color: #59655e !important;
-    }
-
-    .aula-presente > a span {
-        text-decoration: none !important;
-    }
-
-    .aula-presente > a .botao-presente {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
         text-decoration: none !important;
     }
 
+    .aula-presente > a > span {
+        text-decoration: none !important;
+    }
+
+    .aula-presente > a > span:nth-child(1) {
+        flex: 1;
+    }
+
+    .aula-presente > a > span:nth-child(2) {
+        white-space: nowrap;
+    }
+
+    .aula-presente > a > .botao-presente {
+        flex-shrink: 0;
+    }
 }

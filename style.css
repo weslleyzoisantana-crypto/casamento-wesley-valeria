@@ -89,26 +89,21 @@ color:#b39b6d;
 
 /* CAPA */
 
-.hero{
+.hero {
+    height: 100vh;
 
-height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url("capa.jpeg");
 
-background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),url("img/capa.jpg");
+    background-size: cover;
+    background-position: center 60%;
 
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-padding:20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .overlay{

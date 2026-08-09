@@ -674,55 +674,89 @@ background:#55614f;
 
 }
 
-/* PRESENTES */
-.aula-presente {
-    margin: 14px 0;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.75);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-    overflow: hidden;
+/* ===== LISTA DE PRESENTES ===== */
+
+.aula-lista {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.aula-presente a {
-    display: flex !important;
+.aula-presente {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 15px;
+    gap: 20px;
+
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(143, 174, 155, 0.25);
+    border-radius: 18px;
+
     padding: 18px 22px;
-    width: 100%;
-    box-sizing: border-box;
+    margin-bottom: 14px;
 
-    color: #4f6258 !important;
-    text-decoration: none !important;
-    cursor: pointer;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.aula-presente a:hover {
-    background: #f1f7f3;
-    text-decoration: none !important;
+.aula-presente:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
 }
 
-.aula-presente a span:first-child {
-    flex: 1;
+/* texto do presente */
+.aula-presente .nome-presente {
     font-size: 17px;
+    color: #59655e;
+    font-weight: 500;
 }
 
-.aula-presente a span:nth-child(2) {
-    font-weight: 600;
-    white-space: nowrap;
-}
+/* botão */
+.botao-presente {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
 
-.aula-presente .botao-presente {
-    display: inline-block !important;
-    padding: 9px 18px;
-    border-radius: 25px;
-    background: #8fae9b;
+    background: #8fae9b !important;
     color: white !important;
-    font-weight: 600;
+
+    text-decoration: none !important;
+
+    padding: 10px 20px;
+    border-radius: 25px;
+
     font-size: 14px;
+    font-weight: 600;
+
     white-space: nowrap;
+
+    transition: all 0.2s ease;
 }
 
-.aula-presente a:hover .botao-presente {
-    background: #789785;
+.botao-presente:hover {
+    background: #789783 !important;
+    transform: scale(1.03);
+}
+
+/* celular */
+@media (max-width: 600px) {
+
+    .aula-lista {
+        padding: 0 15px;
+    }
+
+    .aula-presente {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .aula-presente .nome-presente {
+        font-size: 15px;
+    }
+
+    .botao-presente {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
 }
